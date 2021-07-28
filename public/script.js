@@ -2,8 +2,6 @@ const cards = document.querySelectorAll('.card-recipes');
 
 cards.forEach(function(card,index) {
     card.addEventListener("click", function(){
-        
-        const recipeId = card.getAttribute('id');
         window.location.href = `/recipes/${index}`;        
     });
 });
@@ -23,3 +21,32 @@ for(let i = 0; i < buttons.length; i++ ){
     })
 }
 
+/* Admin */
+
+function addIngredient(){
+    const ingredients = document.querySelector("#ingredients")
+    const fieldContainer = document.querySelectorAll('.ingredient')
+    const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true)
+    
+    if(newField.children[0].value == '') return false
+    
+    newField.children[0].value = ''
+    ingredients.appendChild(newField)
+}
+
+document.querySelector('.add-ingredient')
+document.addEventListener('click',addIngredient)
+
+function addStep(){
+    const preparation = document.querySelector("#preparation")
+    const fieldContainer = document.querySelectorAll('.preparation')
+    const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true)
+    
+    if(newField.children[0].value == '') return false
+    
+    newField.children[0].value = ''
+    preparation.appendChild(newField)
+}
+
+document.querySelector('.add-preparation')
+document.addEventListener('click',addStep)

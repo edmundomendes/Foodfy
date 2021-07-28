@@ -1,0 +1,60 @@
+{% extends 'admin/layout.njk'%}
+
+{% block content %}
+
+
+    <div id='start'>
+        <h1>Criando Receita</h1>
+        <a href="#">Salvar receita</a>
+    </div>
+
+    <form action="submit">
+
+        <div class='item'>
+            <div>Imagem da receita</div>
+            <input 
+            type="url"
+            name='image'
+            >
+        </div>
+
+        <div class='item'>
+            <div>Ingredientes</div>
+                <div id="ingredients">
+                    <div class='ingredient'>
+                        <input 
+                        type="text"
+                        name='ingredients[]'
+                        >
+                    </div>
+                </div>
+        </div>
+        <button type='button' class='add-ingredient'>Adicionar ingredientes</button>
+
+        <div class='item'>
+            <div>Modo de preparo</div>
+                <div id="preparation">
+                    <div class='preparation'>
+                        <input 
+                        type="text"
+                        name='preparation[]'
+                        >
+                    </div>
+                </div>
+        </div>
+        <button type='button' class='add-preparation'>Adicionar novo passo</button>
+  
+        <div class='item'>
+            <div>Informações adicionais</div>
+            <input 
+            type="text" 
+            name="information"
+            id='information'>
+        </div>
+
+    </form>
+
+
+    <script src="/script/js"></script>
+
+{% endblock %}
