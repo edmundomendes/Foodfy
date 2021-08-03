@@ -11,13 +11,13 @@
 
 # :construction: Projeto em andamento
 
+  <br>
+  
 </center>
 
 # :gear: Tecnologias utilizadas
 
 <img aling="left" alt='HTML' width='30px' src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"> HTML  <img aling="left" alt='CSS' width='30px' src=https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png> CSS <img aling="left" alt='Javascript' width='30px' src=https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png> Javascript <img aling="left" alt='NPM' width='30px' src=https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/npm/npm.png> NPM <img aling="left" alt='NPM' width='30px' src=https://eseom.gallerycdn.vsassets.io/extensions/eseom/nunjucks-template/0.4.2/1620376601793/Microsoft.VisualStudio.Services.Icons.Default> Nunjucks
-
-<br>
 
 # :rocket: Implementação
 
