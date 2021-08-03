@@ -1,24 +1,22 @@
 <html>
-
     <head>
-        <link rel="stylesheet" href="/admin.css">
+        <link rel="stylesheet" href="./admin-styles.css">
         {% block title %}
-                <title>Foodfy - Criação</title>
+                <title>Foodfy / Admin </title>
         {% endblock title %}
     </head>
-
     <body>
+          <header>
+                <img src="/assets/admin_logo.png" alt="Foodfy">
+          </header>
 
-        <header>
-            <img src="/assets/logo.png">
-        </header>
+          <main>
     
-         <main>
-
+        
     {% block content %}
     {% endblock %}
 
         </main>
-    </body>
 
+    </body>
 </html>

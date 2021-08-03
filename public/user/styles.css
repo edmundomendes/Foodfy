@@ -25,20 +25,36 @@ header{
   color: var(--color_texto);
   letter-spacing: 1.65px;
 }
+.links{
+  font-size: 22px;
+}
 .links a{
   text-decoration: none;
-  font-size: 16px;
-  color: var(--color_texto);
-  padding-right: 30px;
+  color: black;
+  position: relative;
+}
+.links a + a{
+  margin-left: 32px;
+}
+.links a.active{
+  font-weight: bold;   
+  color: blue;
 }
 .links a:hover{
   color: blue;
-  transition: 300ms;
-  font-size: 22px;
-  font-weight: bold;
 }
-.links a:active{
-  color: blue;
+.links a::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+.links a:hover::after{
+  width: 100%;
+  transition: width 700ms ease-in-out;
 }
 
 .presentation{

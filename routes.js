@@ -1,28 +1,32 @@
+const { request } = require('express')
 const express = require('express')
 const routes = express.Router()
-const recipes = require('./controllers/recipes')
+const user = require('./controllers/user')
 const admin = require('./controllers/admin')
 
-/* Recipes */
+/* index */
 
-routes.get('/',recipes.index)
+routes.get('/', function(req,res){
+    return res.redirect('/user')
+})
 
-routes.get('/about',recipes.about)
+/* user */
 
-routes.get('/recipes',recipes.receita)
+routes.get('/user', user.index)
 
-routes.get("/recipes/:index",recipes.show)
+routes.get('/user/about', user.about)
 
-/* ADMIN */
+routes.get('/user/recipes', user.recipes)
 
-// routes.get("/admin/recipes", recipes.index); // Mostrar a lista de receitas
-routes.get("/admin/create", admin.create); // Mostrar formulário de nova receita
-// routes.get("/admin/recipes/:id", recipes.show); // Exibir detalhes de uma receita
-// routes.get("/admin/recipes/:id/edit", recipes.edit); // Mostrar formulário de edição de receita
+routes.get('/user/recipes/:index', user.recipes_details)
 
-// routes.post("/admin/recipes", recipes.post); // Cadastrar nova receita
-// routes.put("/admin/recipes", recipes.put); // Editar uma receita
-// routes.delete("/admin/recipes", recipes.delete); // Deletar uma receita
+/* admin */
+
+routes.get('/admin', admin.index)
+
+routes.get("/admin/create", admin.create)
+
+routes.post('/admin', admin.post)
 
 
 module.exports = routes

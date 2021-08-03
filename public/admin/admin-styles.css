@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root{
+    --button-color:#6558C3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    font-family:'Roboto',sans-serif;
+
+}
+/* Header - Links */
+
+header{
+    background-color: black;
+    margin-bottom: 20px;
+    height: 80px;
+}
+header img{
+    padding-left: 438px;
+    padding-top: 27px;
+}
+main{
+    padding-left: 438px;
+    width: 50%;
+}
+
+/* Index - Content */
+
+.container .admin_image img{
+    width: 200px;
+    height: 100px;
+    border-radius: 8.57px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding-top: 30px;
+}
+.admin_image{
+    display: flex;
+}
+.container_index_details{
+    padding-left: 20px;
+}
+.container_index_details h4{
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+.container_index_details p{
+    font-size: 14px;
+    color: #777777;
+    padding-bottom: 10px;
+}
+.container_index_details a{
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--button-color);
+    text-decoration: none;
+}
+
+/* Create - Content */
+
+.container_create{
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    padding-bottom: 20px;
+}
+.save_form{
+    color: white;
+    background-color: var(--button-color);
+    border-radius: 4px;
+    height: 37px;
+    width: 139px;
+}
+.items > h4{
+    font-weight: bold;
+    font-size: 16px;
+}
+input,
+textarea{
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    width: 940px;
+    height: 49px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.add-ingredient,
+.add-preparation{
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--button-color);
+    text-align: right;
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+textarea{
+    width:940px; 
+    height:257px;
+}
+
+

@@ -1,60 +1,34 @@
-<h1 align="center">
-    <img alt="Launchbase" src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/logo.png" width="200px" />
-</h1>
+<center>
 
-<h2 align="center">
-  Foodfy
-</h2>
-<h3 align="center">
-  Desafio Foodfy.
+#  Foodfy
+##  Site para criação e amostra de receitas culinárias
+
 <br>
-<br>  
-<p align="center">
 
-  <a href="https://rocketseat.com.br">
-    <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%23F8952D">
-  </a>
+![gif](https://media.giphy.com/media/6BlCx7dtjTC87WPbK2/giphy.gif)
 
-  <a href="LICENSE" >
-    <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
-  </a>
+<br>
 
-</p>
+# :construction: Projeto em andamento
 
-## ✍ Desafio Refatorar o Foodfy
+</center>
 
-### Refatorando
+# :gear: Tecnologias utilizadas
 
-Neste desafio foi refatorado o projeto Foodfy, usando o nunjucks como template engine e adicionando um servidor com node.js e o express.
+<img aling="left" alt='HTML' width='30px' src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"> HTML  <img aling="left" alt='CSS' width='30px' src=https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png> CSS <img aling="left" alt='Javascript' width='30px' src=https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png> Javascript <img aling="left" alt='NPM' width='30px' src=https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/npm/npm.png> NPM <img aling="left" alt='NPM' width='30px' src=https://eseom.gallerycdn.vsassets.io/extensions/eseom/nunjucks-template/0.4.2/1620376601793/Microsoft.VisualStudio.Services.Icons.Default> Nunjucks
 
-#### Arquivo de Dados
+<br>
 
-##### Refatorando:
-- [x] Criar um Arquivo de dados, `data.js` com dados sobre as receitas.
-- [x] Use os dados das receitas contidos no arquivo data.js para a página de listagem de receitas e para a home.
-- [x] Na home, liste as 6 primeiras receitas
-- [x] Na listagem, liste todas receitas do arquivo.
-- [x] Ao clicar em uma receita agora o usuário deve ser redirecionado para uma nova página contendo todas informações da receita como ingredientes, modo de preparo e informações adicionais.
-- [x] Na página com detalhes da receita, foi adicionado um botão para mostrar/esconder detalhes.
+# :rocket: Implementação
 
-Obs.: O projeto foi convertido em node.js usando o nunjucks.  
+Até o momento foi implemantado as rotas do usuário na qual ele consegue visualizar as receitas cadastras e a rota de administrador na qual pode ser realizada o cadastro de receitas e a listagem.
+<br>
 
+# :telescope: Futuras Implementações
 
-<!-- ##### Obter ID da receita atráves da URL no Node.js
+Vai ser implementado as rotas de edição e deletar das receitas.
 
-  
-```js
-
-    server.get("/recipes/:index", function(req,res){
-
-        const recipeIndex = req.params.index
-
-        return res.render("recipes", {item: recipes[recipeIndex]})
-    })
-
-``` -->
-
-## :gear: Como usar
+# :gear: Como usar
 ```bash
 # Clone este repositório
 $ git clone https://github.com/edmundomendes/Foodfy.git
@@ -64,21 +38,16 @@ $ cd Foodfy
 
 # Instale as dependências do projeto
 $ npm install
+$ npm nodemon
+$ npm run-all browser-sync
 
 # Rode o servidor
 $ npm start
 
 # Acesse na web
-http://localhost:5000
+http://localhost:3000
 
 ```
-
-## :film_strip: Demonstração
-
-![gif](https://media.giphy.com/media/O5AZI8suH0sli8Delg/giphy.gif)
-
----
-
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
