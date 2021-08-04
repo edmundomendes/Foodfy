@@ -2,7 +2,7 @@
 
 {%block title%}
 
-    <title>Admin / Create</title>
+    <title>Admin / Criação</title>
 
 {%endblock%}
 
@@ -18,67 +18,8 @@
 
     </div>
 
-    <div class="items">
-        <h4>Nome da receita</h4>
-            <input 
-            type='txt'
-            name='title'
-            value='{{recipe.title}}'
-            />
-    </div>
+        {%include 'admin/fields.njk'%} 
 
-    <div class="items">
-        <h4>Nome do chef</h4>
-            <input 
-            type='txt'
-            name='author'
-            value='{{recipe.author}}'
-            />
-    </div>
-
-    <div class="items">
-        <h4>Imagem da receita</h4>
-            <input 
-            type='url'
-            name='image_url'
-            placeholder='http://'
-            value='{{recipe.image_url}}'
-            />
-    </div>
-
-
-    <div id="ingredients">
-        <h4>Ingredientes</h4>
-            <div class="ingredient">
-                <input 
-                    type="text" 
-                    name="ingredients[]" 
-                    value='{{recipe.ingredients}}'
-                />
-            </div>
-    </div>
-        <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
-    
-    <div id="preparations">
-        <h4>Modo de preparo</h4>
-            <div class="preparation">
-                <input 
-                    type="text" 
-                    name="preparations[]" 
-                    value='{{recipe.preparations}}'
-                />
-            </div>
-    </div>
-        <button type="button" class="add-preparation">Adicionar novo passo</button>
-
-
-    <div class="items">
-        <h4>Informaçõs adicionais</h4>
-            <textarea name="informantion" value='informantion' wrap='hard' cols='33'></textarea>
-    </div>
-    
 </form>
-
-<script src="./script.js"></script>
 
 {% endblock %}

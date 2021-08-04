@@ -1,7 +1,7 @@
 {
   "recipes": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Triplo bacon burger",
       "author": "Jorge Relato",
       "image_url": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
@@ -22,7 +22,7 @@
         "Faça no máximo 4 camadas por forma e leve para congelar.",
         "Retire do congelador, frite ou asse e está pronto."
       ],
-      "informantion": "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um \r\npouquinho de óleo ou manteiga e não amasse os hambúrgueres! \\n\\n Você sabia que a receita que precede o \r\nhambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, \r\nonde um açougueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por \r\nalemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros \r\ningredientes, como queijo, tomates e alface."
+      "informantion": "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um  pouquinho de óleo ou manteiga e não amasse os hambúrgueres! <br> <br> Você sabia que a receita que precede o \r\nhambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, \r\nonde um açougueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por \r\nalemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros \r\ningredientes, como queijo, tomates e alface."
     },
     {
       "id": 2,

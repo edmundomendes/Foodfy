@@ -1,4 +1,3 @@
-const { request } = require('express')
 const express = require('express')
 const routes = express.Router()
 const user = require('./controllers/user')
@@ -18,7 +17,7 @@ routes.get('/user/about', user.about)
 
 routes.get('/user/recipes', user.recipes)
 
-routes.get('/user/recipes/:index', user.recipes_details)
+routes.get('/user/recipes/:id', user.recipes_details)
 
 /* admin */
 
@@ -26,7 +25,10 @@ routes.get('/admin', admin.index)
 
 routes.get("/admin/create", admin.create)
 
-routes.post('/admin', admin.post)
+routes.get('/admin/:id', admin.show)
 
+routes.get('/admin/:id/edit', admin.edit)
+
+routes.post('/admin', admin.post)
 
 module.exports = routes

@@ -1,0 +1,32 @@
+'{% extends './layout.njk' %}'
+
+{%block title%}
+
+    <title>Admin / Criação</title>
+
+{%endblock%}
+
+{%block content%}
+
+<form action="/admin" method="post">
+
+    <form id='form_delete' method='POST' action='/admin?_method=DELETE'>
+        <input type="hidden" name='id' value={{admin.id}}>
+        <button type="submit">Deletar</button>
+    </form>
+
+    <input type="hidden" name='id' value={{admin.id}}>
+    <button type='submit' class='save_form'>Salvar receita</button>
+
+    <div class="container_create">
+        
+        <h2>Criando receita</h2>
+
+
+    </div>
+
+        {%include 'admin/fields.njk'%} 
+
+</form>
+
+{% endblock %}
