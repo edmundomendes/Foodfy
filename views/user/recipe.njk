@@ -28,8 +28,8 @@
     <h2>Modo de preparo</h2>
     <a class="button">Esconder</a>
     <ul class='hide active'>
-        {%for preparations in recipe.preparation%}
-        <li>{{preparations}}</li>
+        {%for preparation in recipe.preparations%}
+        <li>{{preparation}}</li>
         {%endfor%}
     </ul>
 </div>
@@ -37,10 +37,10 @@
 <div class="recipe_details_information">
     <h2>Infomações adicionais</h2>
     <a class="button">Esconder</a>
-    <p class='hide active'>{{recipe.information}}</p>
+    <p class='hide active'>{{recipe.informantion}}</p>
 </div>
 
     
-    <script src="./script.js"></script>
+    <script src="/scriptUser.js"></script>
     
 {% endblock %}

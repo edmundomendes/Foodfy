@@ -17,12 +17,13 @@
         {% for recipe in recipes %}
             <div class="card-recipes">
                 <div class="recipes-images">
-                    <img src={{ recipe.image_url }}></div>
+                    <img src={{ recipe.image_url }}>
+                </div>
                     <div class="recipes-info">
                         <h1>{{ recipe.title }}</h1>
                         <p>{{ recipe.author }}</p>
                     </div>
-                </div>
+            </div>
             {% endfor %}
         </section>
      </div>

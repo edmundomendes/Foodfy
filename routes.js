@@ -17,7 +17,7 @@ routes.get('/user/about', user.about)
 
 routes.get('/user/recipes', user.recipes)
 
-routes.get('/user/recipes/:id', user.recipes_details)
+routes.get('/user/recipe/:id', user.recipes_details)
 
 /* admin */
 

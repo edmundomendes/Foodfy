@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll('.card-recipes');
+const recipes = document.querySelectorAll('.card-recipes');
 const currentPage = location.pathname
 const menuItems = document.querySelectorAll('header .links a')
 
@@ -8,12 +8,12 @@ for(item of menuItems){
     }
 }
 
-cards.forEach(function(card,index) {
-    card.addEventListener("click", function(){
-    
-        window.location.href = `/user/recipes/${index}`;        
-    });
-});
+for(let recipe of recipes){
+    recipe.addEventListener('click',function(){
+        const recipeId = recipe.getAttribute('id')
+        window.location.href = `/user/recipe/${recipeId}` 
+    })
+}
 
 const hide = document.querySelectorAll('.hide')
 const buttons = document.querySelectorAll('.button')
