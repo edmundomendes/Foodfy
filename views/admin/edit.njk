@@ -8,25 +8,27 @@
 
 {%block content%}
 
-<form action="/admin" method="post">
+    <form method="post" action="/admin/{{recipe.id}}?_method=PUT" >
 
-    <form id='form_delete' method='POST' action='/admin?_method=DELETE'>
-        <input type="hidden" name='id' value={{admin.id}}>
-        <button type="submit">Deletar</button>
+    
+        <div class="container_create">
+            <h2>Editando receita</h2>
+        
+            <div class="button_container">
+                <button type="submit"  class='save_form' id='delete'>Deletar</button>
+                <button type='submit' class='save_form' >Salvar receita</button>
+            
+            </div>
+        </div>
+
+            {%include 'admin/fields.njk'%} 
+
     </form>
 
-    <input type="hidden" name='id' value={{admin.id}}>
-    <button type='submit' class='save_form'>Salvar receita</button>
 
-    <div class="container_create">
-        
-        <h2>Criando receita</h2>
+    <form  method='POST' action='/admin?_method=DELETE'>
+        <input type="hidden" name='id' value={{recipe.id}}>
+    </form>
 
 
-    </div>
-
-        {%include 'admin/fields.njk'%} 
-
-</form>
-
-{% endblock %}
+{% endblock content %}

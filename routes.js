@@ -31,4 +31,8 @@ routes.get('/admin/:id/edit', admin.edit)
 
 routes.post('/admin', admin.post)
 
+routes.put('/admin/:id', admin.put)
+
+routes.delete('/admin', admin.delete)
+
 module.exports = routes

@@ -27,34 +27,63 @@
     </div>
 
 
-    <div id="ingredients">
+    <div class='items' id="ingredients">
         <h4>Ingredientes</h4>
+        {% if recipe.ingredients %}
+            {% for ingredient in recipe.ingredients %}
+                <div class="ingredient">
+                    <input 
+                        type="text" 
+                        name="ingredients[]" 
+                        value="{{ingredient}}" 
+                    >
+                </div>
+
+            {% endfor %}
+        {%else%}
+
             <div class="ingredient">
-                <input 
-                    type="text" 
-                    name="ingredients[]" 
-                    value='{{recipe.ingredients}}'
-                />
+                    <input 
+                        type="text" 
+                        name="ingredients[]" 
+                        value='{{ recipe.ingredients }}'
+                    >
             </div>
+        {% endif %}
     </div>
         <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
     
-    <div id="preparations">
+
+    <div id="preparations" class='items'>
         <h4>Modo de preparo</h4>
+        {% if recipe.preparations %}
+            {% for preparation in recipe.preparations %}
+                 <div class="preparation">
+                <input 
+                    type="text" 
+                    name="preparations[]" 
+                    value='{{ preparation }}'
+                />
+            </div>
+
+            {% endfor %}
+        {%else%}
+        
             <div class="preparation">
                 <input 
                     type="text" 
                     name="preparations[]" 
-                    value='{{recipe.preparations}}'
+                    value='{{ recipe.preparations }}'
                 />
             </div>
+        {%endif%}
     </div>
         <button type="button" class="add-preparation">Adicionar novo passo</button>
 
 
     <div class="items">
         <h4>Informaçõs adicionais</h4>
-            <textarea name="informantion" value='informantion' wrap='hard' cols='33'></textarea>
+            <textarea name="informantion" value='{{ recipe.informantion }} ' wrap='hard' cols='33'> {{ recipe.informantion }} </textarea>
     </div>
 
-<script src="./scriptAdmin.js"></script>
+<script src="/admin/scriptAdmin.js"></script>

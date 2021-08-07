@@ -139,23 +139,70 @@
       "informantion": "É uma sobremesa maravilhosa!"
     },
     {
-      "id": 7,
-      "title": "djkakdajdhajkd",
-      "author": "dklasdjklas",
-      "image_url": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/asinha.png",
+      "id": "7",
+      "title": "Pepe",
+      "author": "David Alisson",
+      "image_url": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
       "ingredients": [
-        "djhaskjdhkahjs",
-        "fasdfsdfsdf",
-        "asdasdasasd",
-        "asdasdasd",
-        "dadasdasd"
+        "Pepe",
+        "Raro",
+        "David",
+        "Alisson",
+        "Junhinho",
+        ""
       ],
       "preparations": [
-        "asdasdad",
-        "asdadasda",
-        "sdasdasd"
+        "League",
+        "Of",
+        "Legends"
       ],
-      "informantion": "sdasdasdasdad"
+      "informantion": "          BORA QUERER          "
+    },
+    {
+      "id": 8,
+      "title": "djasdkjashdkasdjhka",
+      "author": "askjdaklsjklasdlkjadj",
+      "image_url": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/asinha.png",
+      "ingredients": [
+        "12 encontros de asinha de galinha, temperados a gosto",
+        "asdasdasdasd",
+        "12 encontros de asinha de galinha, temperados a gosto"
+      ],
+      "preparations": [
+        "Em uma panela, coloque a manteiga para derreter.",
+        "Quando faltar mais ou menos 5 minutos para ficar no ponto de escorrer o macarrão, comece o preparo da receita.",
+        "Em uma tigela coloque o encontro de asinha de galinha e polvilhe a farinha de trigo e misture com as mãos."
+      ],
+      "informantion": "  nvvhgfghfgfhgfhgfh"
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11,
+      "title": "Pizza 4 estações",
+      "author": "Jorge Relato",
+      "image_url": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/asinha.png",
+      "ingredients": [
+        "12 encontros de asinha de galinha, temperados a gosto",
+        "3 kg de carne moída (escolha uma carne magra e macia)",
+        "3 kg de carne moída (escolha uma carne magra e macia)"
+      ],
+      "preparations": [
+        "Misture todos os ingredientes muito bem e amasse para que fique tudo muito bem misturado.",
+        "Quando faltar mais ou menos 5 minutos para ficar no ponto de escorrer o macarrão, comece o preparo da receita.",
+        "No liquidificador bata o leite, o ovo, o sal, o açúcar, a margarina, a farinha de trigo e o fermento em pó até que tudo esteja encorporado."
+      ],
+      "informantion": "  adadasassad"
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
     }
   ]
 }

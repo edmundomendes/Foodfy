@@ -159,3 +159,15 @@ ul
 .recipe_details_information p{
     white-space: normal;
 }
+
+/* Edit - Content */
+
+.button_container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+#delete{
+    background-color: #DC4747;
+    width: 92px;
+}
