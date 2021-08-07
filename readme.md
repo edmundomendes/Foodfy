@@ -21,12 +21,12 @@
 
 # :rocket: Implementação
 
-Até o momento foi implemantado as rotas do usuário na qual ele consegue visualizar as receitas cadastras e a rota de administrador na qual pode ser realizada o cadastro de receitas e a listagem.
+O site no momento conta com duas áreas de acesso (usuário e admin).
 <br>
 
 # :telescope: Futuras Implementações
 
-Vai ser implementado as rotas de edição e deletar das receitas.
+Próxima atualização será a conexão com o banco de dados.
 
 # :gear: Como usar
 ```bash
