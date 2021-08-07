@@ -12,15 +12,22 @@ body{
 
 }
 /* Header - Links */
-
 header{
     background-color: black;
     margin-bottom: 20px;
     height: 80px;
 }
+.header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 header img{
     padding-left: 438px;
     padding-top: 27px;
+}
+#index_form{
+    margin-left: 13px;
+    margin-top: 23px;
 }
 main{
     padding-left: 438px;
@@ -31,7 +38,7 @@ main{
 
 .container .admin_image img{
     width: 200px;
-    height: 100px;
+    height: 90px;
     border-radius: 8.57px;
 }
 .container{
@@ -69,12 +76,14 @@ main{
     grid-template-columns: 1fr 0fr;
     padding-bottom: 20px;
 }
-.save_form{
+.button_form{
     color: white;
     background-color: var(--button-color);
     border-radius: 4px;
     width: 139px;
     height: 37px;
+    cursor: pointer;
+    font-size: 16px;
 }
 .items > h4{
     font-weight: bold;
@@ -112,7 +121,8 @@ textarea{
 .container_create h2{
     text-transform: capitalize;
 }
-#edit_form{
+#edit_form,
+#index_form{
     text-decoration: none;
     text-align: center;
     padding-top: 8px;

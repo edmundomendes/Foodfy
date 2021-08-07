@@ -70,7 +70,7 @@ exports.edit = function(req,res){
     return res.render('admin/edit', {recipe})
 }
 exports.put = function(req,res){
-    const {id} = req.params
+    const {id} = req.body
     let index = 0
 
     const foundRecipe = data.recipes.find(function(recipe, foundIndex){
@@ -94,7 +94,8 @@ exports.put = function(req,res){
     })
 }
 exports.delete = function(req,res){
-    const {id} = req.params
+    const {id} = req.body
+    
 
     const filteredRecipes = data.recipes.filter(function(recipe){
         return recipe.id != id
